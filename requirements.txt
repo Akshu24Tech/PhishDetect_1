@@ -4,4 +4,3 @@ pillow==10.2.0
 tensorflow==2.16.1
 pytesseract==0.3.10
 numpy==1.26.4
-
