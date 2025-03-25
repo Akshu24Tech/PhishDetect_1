@@ -1,6 +1,6 @@
 flask
 flask-cors
 pillow
-tensorflow
+tensorflow==2.18.0
 pytesseract
 numpy
