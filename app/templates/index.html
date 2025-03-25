@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhishDetect - Advanced Phishing Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                <i class="fas fa-shield-alt"></i>
+                <h1>PhishDetect</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="hero-section">
+            <h2>Protect Yourself from Phishing Attacks</h2>
+            <p>Upload a screenshot to analyze potential phishing threats instantly</p>
+        </div>
+
+        <div class="container">
+            <div class="upload-card">
+                <div class="upload-section">
+                    <i class="fas fa-cloud-upload-alt"></i>
+                    <h3>Upload Screenshot</h3>
+                    <input type="file" id="imageInput" accept="image/*">
+                    <button onclick="analyzeImage()" class="analyze-btn">
+                        <i class="fas fa-search"></i> Analyze Screenshot
+                    </button>
+                </div>
+                <div id="preview"></div>
+                <div id="results"></div>
+            </div>
+
+            <div class="features-section">
+                <h3>Why Choose PhishDetect?</h3>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <i class="fas fa-bolt"></i>
+                        <h4>Real-Time Analysis</h4>
+                        <p>Instant results using advanced AI technology</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-brain"></i>
+                        <h4>AI-Powered</h4>
+                        <p>Utilizes machine learning for accurate detection</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-lock"></i>
+                        <h4>Secure</h4>
+                        <p>Your data is analyzed securely and privately</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>PhishDetect</h3>
+                <p>Protecting users from phishing attacks with advanced AI technology.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#privacy">Privacy Policy</a></li>
+                    <li><a href="#terms">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p><i class="fas fa-envelope"></i> support@phishdetect.com</p>
+                <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 PhishDetect. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
